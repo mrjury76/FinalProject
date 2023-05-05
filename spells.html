@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--
+    Author: Patrick Thrower
+    Date: April 2, 2023
+        the spell page is tables for the amount of spell slots that full casters and half casters get at each level
+  -->
+  <title>Spell Slots</title>
+  <link href="styles.css" rel="stylesheet" />
+  <link href="queries.css" rel="stylesheet" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+      <div class="navicon">    <!-- navicon for use on phones-->
+        <a class="icon" href="#" ><img id="navicon" src="navicon.svg" alt="Navicon"/>
+        </a>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="action.html">Actions</a></li>
+            <li><a href="dice.html">Dice</a></li>
+            <li><a href="spells.html">Spells</a></li>
+            <li><a href="treasureTables.html">Treasure Tables</a></li>
+            <li><a href="conditions.html">Conditions</a></li>
+        </ul>
+    </div>
+        <img id="logo"src="dndlogo.png" alt="Dnd Logo">   <!-- dnd logo and dnd beyond hyperlink -->
+        <a href="https://www.dndbeyond.com/">
+            <img id="beyond"src="beyondlogo2.png" alt="DND Beyond logo" />
+        </a>
+        <nav>    <!-- normal nav bar -->
+            <ul>
+                 <li><a href="home.html">Home</a></li>
+                 <li><a href="action.html">Actions</a></li>
+                 <li><a href="dice.html">Dice</a></li>
+                 <li><a href="spells.html">Spells</a></li>
+                 <li><a href="treasureTables.html">Treasure Tables</a></li>
+                 <li><a href="conditions.html">Conditions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>     <!-- number of spell slots and cantrips per level for each full casters and half casters -->
+        <h1>Spell Slots</h1>
+
+        <h2>Full Casters</h2>
+        <table id="full">
+      <tr>
+        <th>Level</th>
+        <th>Cantrips</th>
+        <th>1st</th>
+        <th>2nd</th>
+        <th>3rd</th>
+        <th>4th</th>
+        <th>5th</th>
+        <th>6th</th>
+        <th>7th</th>
+        <th>8th</th>
+        <th>9th</th>
+      </tr>
+      <tr>
+        <th>1st</th>
+        <td>3</td>
+        <td>2</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>          <!-- level 2 -->
+        <th>2nd</th>  <!-- level -->
+        <td>3</td>  <!-- cantrips -->
+        <td>3</td>  <!-- level 1 spell slot-->
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>          <!-- level 3 -->
+        <th>3rd</th>
+        <td>3</td>
+        <td>4</td>
+        <td>2</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <th>4th</th>
+        <td>4</td>
+        <td>4</td>
+        <td>3</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <th>5th</th>
+        <td>4</td>
+        <td>4</td>
+        <td>3</td>
+        <td>2</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <th>6th</th>
+        <td>4</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <th>7th</th>
+        <td>4</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <th>8th</th>
+        <td>4</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <th>9th</th>
+        <td>4</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <th>10th</th>
+        <td>5</td>
+        <td>5</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <th>11th</th>
+        <td>5</td>
+        <td>5</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <th>12th</th>
+        <td>5</td>
+        <td>5</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <th>13th</th>
+        <td>5</td>
+        <td>5</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <th>14th</th>
+        <td>5</td>
+        <td>5</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <th>15th</th>
+        <td>5</td>
+        <td>5</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <th>16th</th>
+        <td>5</td>
+        <td>5</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <th>17th</th>
+        <td>5</td>
+        <td>5</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <th>18th</th>
+        <td>5</td>
+        <td>5</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <th>19th</th>
+        <td>5</td>
+        <td>5</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <th>20th</th>
+        <td>5</td>
+        <td>5</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+
+      <!-- Add more rows for each level -->
+        </table>
+
+        <h2>Half Casters</h2>
+        <table id="half">
+            <tr>
+                <th>Level</th>
+                <th>1st</th>
+                <th>2nd</th>
+                <th>3rd</th>
+                <th>4th</th>
+                <th>5th</th>
+            </tr>
+            <tr>
+              <th>1st</th>
+              <td> - </td>
+              <td> - </td>
+              <td> - </td>
+              <td> - </td>
+              <td> - </td>
+            </tr>
+            <tr>
+              <th>2nd</th>
+              <td>2</td>
+              <td> - </td>
+              <td> - </td>
+              <td> - </td>
+              <td> - </td>
+            </tr>
+            <tr>
+              <th>3rd</th>
+              <td>3</td>
+              <td> - </td>
+              <td> - </td>
+              <td> - </td>
+              <td> - </td>
+            </tr>
+            <tr>
+              <th>4th</th>
+              <td>3</td>
+              <td> - </td>
+              <td> - </td>
+              <td> - </td>
+              <td> - </td>
+            </tr>
+            <tr>
+              <th>5th</th>
+              <td>4</td>
+              <td>2</td>
+              <td> - </td>
+              <td> - </td>
+              <td> - </td>
+
+            </tr>
+            <tr>
+              <th>6th</th>
+              <td>4</td>
+              <td>2</td>
+              <td> - </td>
+              <td> - </td>
+              <td> - </td>
+            </tr>
+            <tr>
+              <th>7th</th>
+              <td>4</td>
+              <td>3</td>
+              <td> - </td>
+              <td> - </td>
+              <td> - </td>
+            </tr>
+            <tr>
+                <th>8th</th>
+                <td>4</td>
+                <td>3</td>
+                <td> - </td>
+                <td> - </td>
+                <td> - </td>
+            </tr>
+            <tr>
+                <th>9th</th>
+                <td>4</td>
+                <td>3</td>
+                <td> 2 </td>
+                <td> - </td>
+                <td> - </td>
+              </tr>
+              <tr>
+                <th>10th</th>
+                <td>4</td>
+                <td>3</td>
+                <td> 2 </td>
+                <td> - </td>
+                <td> - </td>
+              </tr>
+              <tr>
+                <th>11th</th>
+                <td>4</td>
+                <td>3</td>
+                <td> 3 </td>
+                <td> - </td>
+                <td> - </td>
+              </tr>
+              <tr>
+                <th>12th</th>
+                <td>4</td>
+                <td>3</td>
+                <td> 3 </td>
+                <td> - </td>
+                <td> - </td>
+              </tr>
+              <tr>
+                <th>13th</th>
+                <td>4</td>
+                <td>3</td>
+                <td> 3 </td>
+                <td> 1 </td>
+                <td> - </td>
+              </tr>
+              <tr>
+                <th>14th</th>
+                <td>4</td>
+                <td>3</td>
+                <td> 3 </td>
+                <td> 1 </td>
+                <td> - </td>
+              </tr>
+              <tr>
+                <th>15th</th>
+                <td>4</td>
+                <td>3</td>
+                <td> 3 </td>
+                <td> 2 </td>
+                <td> - </td>
+              </tr>
+              <tr>
+                <th>16th</th>
+                <td>4</td>
+                <td>3</td>
+                <td> 3 </td>
+                <td> 2 </td>
+                <td> - </td>
+              </tr>
+              <tr>
+                <th>17th</th>
+                <td>4</td>
+                <td>3</td>
+                <td> 3 </td>
+                <td> 3 </td>
+                <td> 1 </td>
+              </tr>
+              <tr>
+                <th>18th</th>
+                <td>4</td>
+                <td>3</td>
+                <td> 3 </td>
+                <td> 3 </td>
+                <td> 1 </td>
+              </tr>
+              <tr>
+                <th>19th</th>
+                <td>4</td>
+                <td>3</td>
+                <td> 3 </td>
+                <td> 3 </td>
+                <td> 2 </td>
+              </tr>
+              <tr>
+                <th>20th</th>
+                <td>4</td>
+                <td>3</td>
+                <td> 3 </td>
+                <td> 3 </td>
+                <td> 2 </td>
+              </tr>
+        </table>
+    </div>
+
+    <footer>   <!-- footer with my name and copyright symbol -->
+        <p>&copy; 2023 Patrick Thrower</p>
+    </footer>
+  
+</body>
+</html>

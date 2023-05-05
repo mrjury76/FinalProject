@@ -1,0 +1,136 @@
+  /* 
+   Author: Patrick Thrower
+   Date: Apr 2, 2023
+    Media Queries for styling the webpage for phones and tablets
+*/ 
+
+
+/*Media Queries*/  
+
+@media only screen and (max-width: 480px) {  /* Phone styles */
+/* Global Styles */
+    body{
+        display:inline-flexbox;
+        font-size: 15px;
+        flex-wrap: wrap;
+        width: 100%;
+        font-family:  fantasy;
+        padding: 2px;
+    }
+    p, h2, table, h1{   /* for clearing elements when the navicon is triggered */
+        clear:both;
+    }
+    p{
+        font-size: 1.2em;
+    }
+
+/* Nav and Navicon Styles */
+    nav{
+        display: none;
+    }
+    
+    div.navicon{
+        display: block;
+        position: relative;
+        width:12%;
+        height: 12%;
+        float:left;
+        margin-top: 20px;
+        margin-left: 20px;
+        border-radius: 5px;
+    }
+    
+    img#navicon{
+        display: block;
+        height: 100%;
+        width: 100%;
+        background-color: transparent;
+        color: black;
+        font-style: normal;
+    }
+    
+    div.navicon ul{
+        display: none;
+    }
+
+    div.navicon a{
+        color: black;
+        text-decoration: none;    }
+    div.navicon a:hover{
+        color: beige;
+    }
+
+    div.navicon:hover ul , div.navicon:visited ul, div.navicon{
+        display: block;
+        z-index: 99;
+        list-style: none;
+        top:0px;
+    }
+    
+/* Footer Styles */
+    footer{
+        display:-webkit-inline-box;
+        flex-wrap: wrap;
+        width:auto;
+    }
+
+/* Table Styles */
+    table, table#action, table#full, table#half{
+        display:-ms-inline-flexbox;
+        width: 98%;
+    }
+
+    iframe{
+        display: none;
+    }
+
+/* Image Styles */
+    img#logo{
+        display:block;
+        position: relative;
+        float:none;
+        height: 20%;
+        width:40%;
+        margin: 5px auto;
+    }
+
+    img#beyond{
+        display: none;
+    }
+    #easter-egg {
+        display: none;    /* :( */
+    }
+
+    div#sidebar{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {  /* Tablet styles */
+    body{
+        display: block;
+        font-size: 13px;
+        flex-wrap: wrap;
+        width: 0px auto;
+        /* margin-right: 100px; */
+    }
+
+    footer{
+        text-align: center;
+        margin: 5px auto;
+    }
+
+    table#action{
+        width: 90%;
+    }
+
+    #easter-egg {
+        display: none;    /* :( */
+    }
+    
+    nav{
+        font-size: 1.5em;
+    }
+
+    
+}

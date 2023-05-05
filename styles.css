@@ -1,0 +1,258 @@
+@font-face {   /*  imported fonts */ 
+    font-family:'DragonHunter';
+    src: url('DragonHunter.otf') format('opentype');
+    font-weight:light;
+    font-style: normal;
+}
+ @font-face {
+    font-family:'Fire';
+    src: url('FireBreath.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  /* 
+  Author: Patrick Thrower
+  Date: April 2, 2023
+    Computer styles for my website
+*/
+
+
+/*Global Styles */
+html{              
+    background-image: url(dmg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Fire, DragonHunter;
+}
+
+body{
+  background-image: url(page.jpg);
+  /* font-family: Fire, DragonHunter, Arial, sans-serif; */
+  font-size: 22px;
+  height: auto; 
+  width:100vh;
+  margin: 0px auto;
+  line-height: 1.5;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #333;
+  box-shadow: 0px 0px 25px black;
+}
+
+img#logo{
+    display: grid;
+    float: left;
+    height: 7%;
+    width: 14%;
+    margin: 0px auto;
+}
+
+img#beyond{
+    display: grid;
+    float: right;
+    height: 7%;
+    width: 14%;
+    margin: 0px auto;
+    padding-top: 10px;
+}
+
+h1 {
+    display:flexbox;
+    font-family: Fire, DragonHunter;
+    margin: 0px auto;
+}
+
+h2{
+  display: flexbox;
+  margin: 10px auto;
+  text-align: center;
+}
+  
+
+
+
+/* Header styles */
+header{
+    display:block;
+    font-size: 1.7em;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #333;
+    padding: 10px;
+    clear: both;
+    border-radius: 5px;
+    margin: 5px auto;
+  }
+  
+  nav ul {
+    margin: 0px auto;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    margin: 0px auto;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: rgb(247, 24, 24);
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    color:bisque; 
+  }
+
+  nav a:active{
+    color: rgb(0, 0, 0);
+  }
+
+  div#sidebar{
+    border-radius:  5px;
+    color:rgb(243, 44, 44);
+    position: fixed;
+    top: 250px;
+    /* height: 40%; */
+    width: 150px; 
+    background-color: #333;
+    
+  }
+  #sidebar a{
+    text-decoration:none;
+  }
+  
+  div#sidebar a:after, div#sidebar a:visited{
+    color:rgb(243, 44, 44);
+  }
+
+  div#sidebar a:hover{
+    color:bisque; 
+    text-decoration: none;
+  }
+   div.navicon, img#navicon{
+     display: none; 
+  }
+
+h1{
+    margin: 0px auto;
+    padding: 20px;
+}
+
+iframe{
+  display: block;
+  float: left;
+  margin: 5px auto;
+}
+
+/* Footer style */
+
+footer{
+    display: block;
+    font-family: monospace;
+    background-color: #333;
+    color:antiquewhite;
+    clear: both;
+    position: relative;
+    bottom: 0;
+    width: 100vh;
+    border-radius: 5px;
+    border: solid 1px rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+/*Dice Styles*/
+
+  .button {
+    display: inline-block;
+    /* background-image: url(diceoutline.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;  /*background img cover no repeat*/
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0px auto;
+    width: 25%;
+    height: 50%;
+    box-shadow: 2px 2px 4px #bdc3c7;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .button:hover {
+    transform: scale(1.2);
+  }
+  
+  #result {
+    font-size: 24px;
+    margin-top: 20px;
+    margin: 5px auto;
+    text-align: center;
+  }
+
+  label{
+    font-size: 1.4em;
+  }
+
+
+  /* Table Styles */
+
+  table{
+    display:block;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 15px black;
+    width: 60%;
+    margin: 10px auto; 
+    background-color: beige;
+  }
+
+  table#action{
+    width: 100vh;
+    margin: 10px auto; 
+  }
+
+   table#full{
+    width: 80%;
+    margin: 20px auto; 
+  }
+
+  table#half
+  {
+    width: 40%;
+    margin: 20px auto; 
+  }
+
+  thead{
+    font-size:larger;
+    height: 100px;
+    color: rgb(243, 44, 44);
+  }
+
+  td, th{
+    border: solid 1px black;
+    text-align: center;
+    margin: 2px auto;
+    width: 7%;
+    height: 20px;
+  }
+
+
+
+
+  #easter-egg {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    z-index: 9999;
+    }
